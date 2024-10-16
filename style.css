@@ -1,0 +1,33 @@
+/* Custom CSS */
+.hero {
+    background-image: url('hero\ img.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 100px 0;
+    
+}
+
+.features, .benefits {
+    padding: 50px 0;
+}
+
+.cta {
+    margin-top: 30px;
+}
+
+.testimonial {
+    background: #f8f9fa;
+    padding: 50px 0;
+}
+
+.demo .embed-responsive {
+    margin: 20px auto;
+}
+
+blockquote {
+    font-size: 1.25rem;
+    border-left: 0.25rem solid #007bff;
+    padding-left: 1rem;
+}
