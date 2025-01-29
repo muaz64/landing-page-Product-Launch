@@ -29,9 +29,12 @@
     position: relative;
     z-index: 2; /* Keep text above overlay */
 }
+#features img {
+    width: 100%; /* Ensures responsiveness */
+    height: 200px; /* Set a fixed height */
+    object-fit: contain; /* Ensures images don't get distorted */
+}
 
-
-/* Improved Button Contrast */
 .btn-primary {
     background-color: #0056b3;
     border-color: #004494;
@@ -40,7 +43,7 @@
     background-color: #003e82;
 }
 
-/* Improved CTA Button */
+
 .btn-success {
     background-color: #28a745;
     border-color: #218838;
@@ -50,7 +53,7 @@
 }
 
 /* Spacing & Padding */
-.features, .benefits {
+.benefits {
     padding: 50px 0;
 }
 
