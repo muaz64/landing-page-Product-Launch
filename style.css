@@ -1,6 +1,6 @@
 /* Custom CSS */
 .hero {
-    background-image: url('hero\ img.jpg');
+    background-image: url('./heroimg.jpg');
     background-size: cover;
     background-position: center;
     color: rgb(0, 0, 0);
