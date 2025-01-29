@@ -1,15 +1,55 @@
 /* Custom CSS */
 .hero {
-    background-image: url('./heroimg.jpg');
+    background-image: url('/heroimg.jpg'); /* Fixed Image Path */
     background-size: cover;
     background-position: center;
-    color: rgb(0, 0, 0);
+    color: black;
     text-align: center;
     padding: 100px 0;
-   
-    
+}
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+    color: white; /* Improved contrast */
 }
 
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero h1, .hero p, .hero a {
+    position: relative;
+    z-index: 2; /* Keep text above overlay */
+}
+
+
+/* Improved Button Contrast */
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #004494;
+}
+.btn-primary:hover {
+    background-color: #003e82;
+}
+
+/* Improved CTA Button */
+.btn-success {
+    background-color: #28a745;
+    border-color: #218838;
+}
+.btn-success:hover {
+    background-color: #1e7e34;
+}
+
+/* Spacing & Padding */
 .features, .benefits {
     padding: 50px 0;
 }
@@ -31,4 +71,17 @@ blockquote {
     font-size: 1.25rem;
     border-left: 0.25rem solid #007bff;
     padding-left: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 20px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 1rem;
+    }
 }
