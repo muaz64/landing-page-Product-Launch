@@ -35,6 +35,18 @@
     object-fit: contain; /* Ensures images don't get distorted */
 }
 
+/* Counter Section */
+.counter-section {
+    background: #f8f9fa;
+    padding: 40px 0;
+}
+
+.counter {
+    font-size: 50px;
+    font-weight: bold;
+    color: #007bff;
+}
+
 .btn-primary {
     background-color: #0056b3;
     border-color: #004494;

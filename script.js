@@ -17,3 +17,8 @@ const updateCounter = () => {
 };
 
 window.addEventListener("load", updateCounter);
+
+// Live Chat Toggle
+document.getElementById('chat-toggle').addEventListener('click', function () {
+    document.getElementById('chat-box').classList.toggle('d-none');
+});
