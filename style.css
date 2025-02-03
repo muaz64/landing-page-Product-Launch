@@ -76,6 +76,41 @@ blockquote {
     padding-left: 1rem;
 }
 
+/* Pricing Section */
+.pricing .card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.pricing .card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    
+}
+
+/* Live Chat Widget */
+.chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.chat-box {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Newsletter */
+.newsletter input {
+    max-width: 300px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero {
